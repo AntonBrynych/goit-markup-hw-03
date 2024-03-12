@@ -241,7 +241,6 @@ address {
 }
 
 .list-port-item {
-    background-color: #ffffff;
     width: calc((100% - 48px) / 3);
 }
 
