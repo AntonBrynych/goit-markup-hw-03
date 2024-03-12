@@ -240,6 +240,7 @@ address {
 }
 
 .list-port-item {
+    display: block;
     width: calc((100% - 48px) / 3);
 }
 
