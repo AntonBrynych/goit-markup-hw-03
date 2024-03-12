@@ -58,6 +58,7 @@ address {
 
 .navigation {
     display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -92,14 +93,14 @@ address {
     font-weight: 500;
     letter-spacing: 0.02em;
     list-style:none;
-    gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    gap: 40px;   
 }
 
 .page-nav .link {
     color: #2e2f42;
     text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .page-nav .link:hover,
@@ -125,7 +126,8 @@ address {
 
 .main-section {
     background-color: #2e2f42;
-
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .main-header {
@@ -133,6 +135,7 @@ address {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    max-width: 496px;
     text-align: center;
 }
 
@@ -148,7 +151,7 @@ address {
     border-radius: 4px;
     margin-top: 48px;
     text-align: center;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     cursor: pointer;    
 }
@@ -166,7 +169,7 @@ address {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color:#2e2f42;
-    margin-bottom: 72px;
+    margin-bottom: 72px;    
 }
 
 .headss {
@@ -175,6 +178,7 @@ address {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .bighead {
@@ -182,6 +186,19 @@ address {
     align-items: center;
     flex-direction: column;
     margin-bottom: 48px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .list {
@@ -202,12 +219,12 @@ address {
 
 .list-item-corn {
     background-color: #ffffff;
-    width: calc((1128 - 3 * 32) / 4);   
+    width: calc((100% - 3 * 24px) / 4);
 }
 
 .list-item {
     background-color: #ffffff;
-    width: calc((1128 - 3 * 32) / 4);
+    width: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px #2E2F4214;
     box-shadow: 0px 1px 1px 0px #2E2F4229;
@@ -217,7 +234,7 @@ address {
 
 .list-port-item {
     background-color: #ffffff;
-    width: calc((1128 - 2 * 32) / 3);
+    width: calc((100% - 2 * 32) / 3);
     border: 1px solid #E7E9FC;
     padding-bottom: 32px;
 }
@@ -257,15 +274,15 @@ address {
 
 .foott {
     background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 156px;
 }
 
 .footer-container {
     display: flex;
     align-items: left;
     flex-direction: column;
-    padding-left: 156px;
-    padding-top: 100px;
-    padding: 16px;
 }
 
 .foot-text {
